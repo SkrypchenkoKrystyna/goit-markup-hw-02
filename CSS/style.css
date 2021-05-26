@@ -43,6 +43,7 @@ a {
   color: black;
 }
 /* navigation */
+
 .nav-list a:hover,
 .nav-list a:focus {
   color: var(--accent-color);
@@ -51,7 +52,6 @@ a {
 .active-link {
   font-family: var(--main-font);
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.143px;
   letter-spacing: 0.02em;
   color: var(--accent-color);
