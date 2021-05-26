@@ -3,6 +3,9 @@
   --main-text-color: #212121;
   --title-text-color: #757575;
   --accent-color: #2196f3;
+  --white-color: #ffffff;
+  --back-color: #2f303a;
+  --background-color: #f5f4fa;
   --main-font: "Roboto", sans-serif;
   --accent-font: "Raleway", sans-serif;
 }
@@ -13,7 +16,7 @@
 }
 body {
   font-family: var(--main-font);
-  color: #212121;
+  color: var(--main-text-color);
 }
 
 ul {
@@ -30,9 +33,7 @@ a {
 /* logotype */
 .logo {
   font-family: var(--accent-font);
-  font-weight: 700;
   font-size: 26px;
-  line-height: 1.192px;
   letter-spacing: 0.03em;
 }
 .logo-web {
@@ -49,9 +50,13 @@ a {
 
 .active-link {
   font-family: var(--main-font);
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.143px;
   letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+.link-active {
   color: var(--accent-color);
 }
 .contact-link {
@@ -73,8 +78,8 @@ a {
 /* Main-styles */
 /* Hero */
 .hero-section {
-  background-color: #2f303a;
-  color: #ffffff;
+  background-color: var(--back-color);
+  color: var(--white-color);
 }
 .hero-title {
   font-weight: 900;
@@ -92,14 +97,14 @@ a {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--white-color);
   background-color: var(--accent-color);
 }
 
 .main-button:hover,
 .main-button:focus {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: var(--white-color);
   cursor: pointer;
 }
 
@@ -111,7 +116,8 @@ a {
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.03em;
-  color: #212121;
+  text-transform: uppercase;
+  color: var(--main-text-color);
 }
 .about-good-title {
   font-family: var(--title-text-color);
@@ -125,7 +131,6 @@ a {
 
 /* What-are-we-doing */
 .title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.167;
   letter-spacing: 0.03em;
@@ -135,10 +140,9 @@ a {
 
 /* Our-team */
 .team-section {
-  background-color: #f5f4fa;
+  background-color: var(--background-color);
 }
 .section-title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.167;
   letter-spacing: 0.03em;
@@ -148,7 +152,7 @@ a {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.187;
-  letter-spacing: 0.03;
+  letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
 .position {
@@ -163,26 +167,19 @@ a {
 /* contacts-footer */
 
 .footer {
-  background-color: #2f303a;
-}
-.logo {
-  font-family: var(--accent-font);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.192px;
-  letter-spacing: 0.03em;
+  background-color: var(--back-color);
 }
 .logo-web-footer {
   color: var(--accent-color);
 }
 .logo-studio-footer {
-  color: #ffffff;
+  color: var(--white-color);
 }
 .contact-list-footer {
   color: var(--main-text-color);
 }
 .adress-nav {
-  color: #ffffff;
+  color: var(--white-color);
 }
 .conact-link-fooer {
   color: rgba(255, 255, 255, 0.6);
@@ -200,9 +197,10 @@ a {
   font-size: 16px;
   line-height: 1.625;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--white-color);
   background-color: var(--accent-color);
 }
+
 .button-list {
   font-weight: 500;
   font-size: 16px;
@@ -213,12 +211,12 @@ a {
 .button-list-first:hover,
 .button-list-first:focus {
   background-color: var(--accent-color);
-  color: #ffffff;
+  color: var(--white-color);
   cursor: pointer;
 }
 .button-list:hover,
 .button-list:focus {
-  background-color: #f5f4fa;
+  background-color: var(--background-color);
   color: var(--main-text-color);
   cursor: pointer;
 }
@@ -226,7 +224,6 @@ a {
 
 /* Card-list */
 .card-title {
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
